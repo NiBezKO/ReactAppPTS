@@ -1,0 +1,30 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    border: 2px solid;
+    border-color: orange;
+    padding: 11px 18px;
+    border-radius: 60px;
+    background-color: orange;
+    cursor: pointer;
+    transition: border-color 0.5s ease-in-out;
+    &:hover {
+      border-color: black;
+    }
+  }
+
+  :global {
+    .selected {
+      a {
+        border-color: black;
+      }
+    }
+  }
+}

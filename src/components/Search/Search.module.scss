@@ -1,0 +1,47 @@
+.root {
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  fill: orange;
+  position: absolute;
+  transition: fill 1s ease-in-out;
+
+  top: 15px;
+  left: 15px;
+  &:is(:hover, :active) {
+    fill: black;
+  }
+}
+
+.input {
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 45px;
+  transition: width 0.5s ease-in-out;
+  &:is(:hover, :active) {
+    border: solid 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.clearValue {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  cursor: pointer;
+  fill: orange;
+  transition: fill 0.7s ease-in-out;
+  &:hover {
+    fill: black;
+  }
+}
